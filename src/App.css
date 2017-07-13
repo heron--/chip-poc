@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.lane-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note-lane {
+  margin-top: 32px;
+}
+
+.note-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note {
+  height: 22px;
+  width: 22px;
+  background-color: #cacaca;
+  border: 3px solid #666;
+  cursor: pointer;
+}
+
+.note-lane-label {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+.note--first {
+  background-color: #868686;
+}
+
+.note--active {
+  background-color: #ffd950;
+  border-color: #f9a339;
+}
+
+.note--current {
+  background-color: #76ece7;
+  border-color: #2dbfb9;
+}
+
+.button-control {
+  display: inline-block;
+  font-size: 22px;
+  text-transform: uppercse;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.button-control:hover {
+  border-bottom: 3px solid #2dbfb9;
+}
+
+.button-control--active {
+  color: #76ece7;
+}
+
+.button-control--pause {
+  margin-left: 20px;
+}
